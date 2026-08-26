@@ -64,7 +64,8 @@ legend {
     margin-bottom: 6px;
 }
 
-.campo input {
+.campo input,
+.campo select {
     width: 100%;
     padding: 10px;
     border: 1px solid #aaaaaa;
@@ -72,7 +73,8 @@ legend {
     font-size: 16px;
 }
 
-.campo input:focus {
+.campo input:focus,
+.campo select:focus {
     border-color: #1d5d9b;
     outline: 2px solid #b9d8f5;
 }
@@ -160,8 +162,7 @@ footer p {
     margin: 0 auto;
 }
 
-.bienvenida,
-.tarjeta {
+.panel {
     padding: 20px;
     background-color: #ffffff;
     border: 2px solid #dddddd;
@@ -217,5 +218,86 @@ footer p {
 
     .menu li:last-child {
         grid-column: auto;
+    }
+}
+
+
+.clientes-seccion {
+    margin-bottom: 20px;
+}
+
+.encabezado-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.encabezado-pagina h2,
+.encabezado-pagina p {
+    margin: 0 0 5px;
+}
+
+.boton-pequeno {
+    width: auto;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align: left;
+}
+
+th {
+    background-color: #dbe7f5;
+    color: #1d3557;
+}
+
+.acciones {
+    white-space: nowrap;
+}
+
+.accion {
+    margin-right: 8px;
+    color: #1d5d9b;
+}
+
+.accion-eliminar {
+    color: #a32121;
+}
+
+.formulario-seccion h2 {
+    margin-top: 0;
+}
+
+.formulario-cliente {
+    max-width: 600px;
+}
+
+@media (max-width: 480px) {
+    .encabezado-pagina {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .boton-pequeno {
+        width: 100%;
     }
 }
