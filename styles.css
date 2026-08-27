@@ -65,7 +65,8 @@ legend {
 }
 
 .campo input,
-.campo select {
+.campo select,
+.campo textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #aaaaaa;
@@ -74,7 +75,8 @@ legend {
 }
 
 .campo input:focus,
-.campo select:focus {
+.campo select:focus,
+.campo textarea:focus {
     border-color: #1d5d9b;
     outline: 2px solid #b9d8f5;
 }
@@ -222,7 +224,7 @@ footer p {
 }
 
 
-.clientes-seccion {
+.listado-seccion {
     margin-bottom: 20px;
 }
 
@@ -287,7 +289,7 @@ th {
     margin-top: 0;
 }
 
-.formulario-cliente {
+.formulario-datos {
     max-width: 600px;
 }
 
@@ -300,4 +302,10 @@ th {
     .boton-pequeno {
         width: 100%;
     }
+}
+
+.campo textarea {
+    min-height: 100px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
 }

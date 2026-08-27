@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de cliente - Patitas Pet Shop</title>
+    <title>Formulario de servicio - Patitas Pet Shop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,50 +28,47 @@
         <section class="panel formulario-seccion">
             <header class="encabezado-pagina">
                 <div>
-                    <h2>Formulario de cliente</h2>
-                    <p>Utiliza este formulario para registrar o modificar un cliente.</p>
+                    <h2>Formulario de servicio</h2>
+                    <p>Utiliza este formulario para registrar o modificar un servicio.</p>
                 </div>
 
-                <a class="boton boton-pequeno" href="clientes.html">Volver a clientes</a>
+                <a class="boton boton-pequeno" href="servicios.html">Volver a servicios</a>
             </header>
 
             <form class="formulario-datos" action="#" method="post">
                 <fieldset>
-                    <legend>Datos del cliente y su mascota</legend>
+                    <legend>Datos del servicio</legend>
 
                     <div class="campo">
-                        <label for="nombre-cliente">Nombre completo</label>
-                        <input type="text" id="nombre-cliente" name="nombre-cliente" required>
+                        <label for="nombre-servicio">Nombre del servicio</label>
+                        <input type="text" id="nombre-servicio" name="nombre-servicio" required>
                     </div>
 
                     <div class="campo">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" required>
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" name="descripcion" required></textarea>
                     </div>
 
                     <div class="campo">
-                        <label for="correo-cliente">Correo electrónico</label>
-                        <input type="email" id="correo-cliente" name="correo-cliente" autocomplete="email" required>
+                        <label for="precio">Precio en bolivianos</label>
+                        <input type="number" id="precio" name="precio" min="0" step="0.01" required>
                     </div>
 
                     <div class="campo">
-                        <label for="nombre-mascota">Nombre de la mascota</label>
-                        <input type="text" id="nombre-mascota" name="nombre-mascota" required>
+                        <label for="duracion">Duración en minutos</label>
+                        <input type="number" id="duracion" name="duracion" min="1" required>
                     </div>
 
                     <div class="campo">
-                        <label for="tipo-mascota">Tipo de mascota</label>
-                        <select id="tipo-mascota" name="tipo-mascota" required>
+                        <label for="estado-servicio">Estado</label>
+                        <select id="estado-servicio" name="estado-servicio" required>
                             <option value="">Selecciona una opción</option>
-                            <option value="perro">Perro</option>
-                            <option value="gato">Gato</option>
-                            <option value="ave">Ave</option>
-                            <option value="pez">Pez</option>
-                            <option value="otro">Otro</option>
+                            <option value="activo">Activo</option>
+                            <option value="inactivo">Inactivo</option>
                         </select>
                     </div>
 
-                    <button class="boton" type="submit">Guardar cliente</button>
+                    <button class="boton" type="submit">Guardar servicio</button>
                 </fieldset>
             </form>
         </section>
