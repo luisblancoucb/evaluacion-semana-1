@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de cita - Patitas Pet Shop</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="dashboard-encabezado">
+        <div class="dashboard-contenedor">
+            <h1>Patitas Pet Shop</h1>
+            <p>Panel administrativo</p>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="dashboard.html">Inicio</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="citas.html">Citas</a></li>
+                    <li><a href="../index.html">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard-principal">
+        <section class="panel formulario-seccion">
+            <header class="encabezado-pagina">
+                <div>
+                    <h2>Formulario de cita</h2>
+                    <p>Utiliza este formulario para registrar o modificar una cita.</p>
+                </div>
+
+                <a class="boton boton-pequeno" href="citas.html">Volver a citas</a>
+            </header>
+
+            <form class="formulario-datos" action="#" method="post" data-destino="citas.html">
+                <fieldset>
+                    <legend>Datos de la cita</legend>
+
+                    <div class="campo">
+                        <label for="cliente-cita">Cliente y mascota</label>
+                        <select id="cliente-cita" name="cliente-cita" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="C-001">Ana Pérez - Firulais</option>
+                            <option value="C-002">Juan López - Michi</option>
+                            <option value="C-003">María Flores - Piolín</option>
+                            <option value="C-004">Carlos Rojas - Nemo</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="servicio-cita">Servicio</label>
+                        <select id="servicio-cita" name="servicio-cita" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="S-001">Baño completo</option>
+                            <option value="S-002">Corte de uñas</option>
+                            <option value="S-003">Peluquería</option>
+                            <option value="S-004">Limpieza de oídos</option>
+                            <option value="S-005">Baño medicado</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="fecha-cita">Fecha</label>
+                        <input type="date" id="fecha-cita" name="fecha-cita" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="hora-cita">Hora</label>
+                        <input type="time" id="hora-cita" name="hora-cita" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="estado-cita">Estado</label>
+                        <select id="estado-cita" name="estado-cita" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="pendiente">Pendiente</option>
+                            <option value="confirmada">Confirmada</option>
+                            <option value="completada">Completada</option>
+                            <option value="cancelada">Cancelada</option>
+                        </select>
+                    </div>
+
+                    <button class="boton" type="submit">Guardar cita</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Maestría en Ingeniería de Software Avanzada</p>
+    </footer>
+    <script src="../js/formularios.js"></script>
+</body>
+</html>
